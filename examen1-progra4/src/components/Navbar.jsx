@@ -2,12 +2,23 @@ import { Link } from 'react-router-dom'
 
 export default function Navbar() {
     return (
-        <nav style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '10px 20px', background: '#1a1a2e' }}>
-            <span style={{ color: 'white', fontWeight: 'bold' }}>Programación IV</span>
-            <div style={{ display: 'flex', gap: '10px' }}>
-                <Link to="/" style={{ color: 'white', textDecoration: 'none' }}>Inicio</Link>
-                <Link to="/carparts" style={{ color: 'white', background: '#7c5cbf', padding: '5px 15px', borderRadius: '5px', textDecoration: 'none' }}>Repuestos</Link>
-            </div>
+        <nav style={{ display: 'flex', justifyContent: 'center', gap: '15px', padding: '15px', background: '#1a1a2e' }}>
+            <Link to="/" style={{
+                color: 'white',
+                textDecoration: 'none',
+                background: '#2d2b55',
+                padding: '12px 30px',
+                borderRadius: '10px',
+                fontSize: '18px'
+            }}>Inicio</Link>
+            <Link to="/carparts" style={{
+                color: 'white',
+                textDecoration: 'none',
+                background: '#2d2b55',
+                padding: '12px 30px',
+                borderRadius: '10px',
+                fontSize: '18px'
+            }}>Repuestos</Link>
         </nav>
     )
 }
